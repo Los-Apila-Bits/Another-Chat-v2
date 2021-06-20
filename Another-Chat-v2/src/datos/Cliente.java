@@ -29,7 +29,7 @@ public class Cliente {
 			socketLobby = new Socket(ip, puerto);
 			salida = new ObjectOutputStream(socketLobby.getOutputStream());
 			System.out.println("Creando salida stream");
-			//entrada = new ObjectInputStream(socketLobby.getInputStream());
+			entrada = new ObjectInputStream(socketLobby.getInputStream());
 			//salidaMsj = new DataOutputStream(salida);
 			//entradaMsj = new DataInputStream(entrada);
 		} catch (IOException e) {
